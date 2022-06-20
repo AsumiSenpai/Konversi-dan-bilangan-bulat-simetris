@@ -1,0 +1,14 @@
+import java.util.concurrent.TimeUnit
+
+fun main(args: Array<String>) {
+    val Sec: Long = 7200
+
+    val myHours = TimeUnit.SECONDS.toHours(Sec)
+    val myMinute = TimeUnit.SECONDS.toMinutes(Sec)
+    val myMilSeconds = TimeUnit.SECONDS.toMillis(Sec)
+
+    println("\nKonversi Detik ke Detik, Menit, dan Jam")
+    println("$Sec Detik = $myHours Jam")
+    println("$Sec Detik = $myMinute Menit")
+    println("$Sec Detik = $myMilSeconds Mili Detik")
+}
